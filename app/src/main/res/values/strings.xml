@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">myweatherapp</string>
+    <string name="network_error">Couldn\'t retrieve location. Make sure to grant permission and enable GPS.</string>
+    <string name="unknown_error">An unknown error occurred.</string>
+</resources>
