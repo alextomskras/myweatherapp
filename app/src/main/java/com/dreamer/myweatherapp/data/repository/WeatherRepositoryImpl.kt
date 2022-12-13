@@ -1,7 +1,5 @@
 package com.dreamer.myweatherapp.data.repository
 
-import android.content.res.Resources
-import android.content.res.Resources.getSystem
 import com.dreamer.myweatherapp.R
 import com.dreamer.myweatherapp.data.mappers.toWeatherInfo
 import com.dreamer.myweatherapp.data.remote.WeatherApi
@@ -16,7 +14,7 @@ class WeatherRepositoryImpl @Inject constructor(
     private val resourcesProvider: AppModule.ResourcesProvider
 ) : WeatherRepository {
 
-    private val errorUnk = R.string.unknown_error.toString()
+
     override suspend fun getWeatherData(lat: Double, long: Double): Resource<WeatherInfo> {
         return try {
             Resource.Success(
